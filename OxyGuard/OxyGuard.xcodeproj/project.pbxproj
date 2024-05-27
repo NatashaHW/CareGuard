@@ -1,0 +1,1635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		402A601E2C04337500B49E98 /* EmergencyAlert.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 402A601D2C04337500B49E98 /* EmergencyAlert.mp3 */; };
+		404C43C02BF488570016FF16 /* OxyGuard Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 404C43BF2BF488570016FF16 /* OxyGuard Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		404C43C52BF488570016FF16 /* OxyGuardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404C43C42BF488570016FF16 /* OxyGuardApp.swift */; };
+		404C43C92BF488590016FF16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 404C43C82BF488590016FF16 /* Assets.xcassets */; };
+		404C43CC2BF488590016FF16 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 404C43CB2BF488590016FF16 /* Preview Assets.xcassets */; };
+		404C43D62BF488590016FF16 /* OxyGuard_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404C43D52BF488590016FF16 /* OxyGuard_Watch_AppTests.swift */; };
+		404C43E02BF488590016FF16 /* OxyGuard_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404C43DF2BF488590016FF16 /* OxyGuard_Watch_AppUITests.swift */; };
+		404C43E22BF488590016FF16 /* OxyGuard_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404C43E12BF488590016FF16 /* OxyGuard_Watch_AppUITestsLaunchTests.swift */; };
+		408ECB102BF62479005E0419 /* OxyMeterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408ECB0F2BF62479005E0419 /* OxyMeterView.swift */; };
+		408ECB122BF65AAB005E0419 /* MeasureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408ECB112BF65AAB005E0419 /* MeasureManager.swift */; };
+		408ECB142BF66751005E0419 /* EndView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408ECB132BF66751005E0419 /* EndView.swift */; };
+		408ECB162BF668DB005E0419 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408ECB152BF668DB005E0419 /* StartView.swift */; };
+		408ECB182BF6802D005E0419 /* SessionPagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408ECB172BF6802D005E0419 /* SessionPagingView.swift */; };
+		4091F8202BF7087C00FB5915 /* MeasuringOxy.json in Resources */ = {isa = PBXBuildFile; fileRef = 4091F81F2BF7087C00FB5915 /* MeasuringOxy.json */; };
+		4091F8272BF752B100FB5915 /* HeartRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4091F8262BF752B100FB5915 /* HeartRateView.swift */; };
+		4091F82D2BF87FD600FB5915 /* EmergencyHeartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4091F82C2BF87FD600FB5915 /* EmergencyHeartView.swift */; };
+		4091F8332BF8F95F00FB5915 /* EmergencyOxyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4091F8322BF8F95F00FB5915 /* EmergencyOxyView.swift */; };
+		4091F8352BF8FA9500FB5915 /* SliderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4091F8342BF8FA9500FB5915 /* SliderButton.swift */; };
+		40CBD97A2BFC4D1D00F52B8E /* EmergencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CBD9792BFC4D1D00F52B8E /* EmergencyView.swift */; };
+		40EF27A22BFCB47600075A48 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EF27A12BFCB47600075A48 /* LocationManager.swift */; };
+		40EF27A42BFCB49500075A48 /* EmergencyHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EF27A32BFCB49500075A48 /* EmergencyHandler.swift */; };
+		40EF27A62BFCB72700075A48 /* MeasurementUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EF27A52BFCB72700075A48 /* MeasurementUtils.swift */; };
+		40EF28A12C00D0F800075A48 /* SDWebImageLottieCoder in Frameworks */ = {isa = PBXBuildFile; productRef = 40EF28A02C00D0F800075A48 /* SDWebImageLottieCoder */; };
+		40EF28A32C00D11A00075A48 /* LottieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EF28A22C00D11A00075A48 /* LottieViewModel.swift */; };
+		40EF28B52C03226800075A48 /* HeartBeat.json in Resources */ = {isa = PBXBuildFile; fileRef = 40EF28B42C03226800075A48 /* HeartBeat.json */; };
+		40F308CC2BFC4695005DD342 /* MeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F308CB2BFC4695005DD342 /* MeasureView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		404C43C12BF488570016FF16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 404C43B32BF488570016FF16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 404C43BE2BF488570016FF16;
+			remoteInfo = "OxyGuard Watch App";
+		};
+		404C43D22BF488590016FF16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 404C43B32BF488570016FF16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 404C43BE2BF488570016FF16;
+			remoteInfo = "OxyGuard Watch App";
+		};
+		404C43DC2BF488590016FF16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 404C43B32BF488570016FF16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 404C43BE2BF488570016FF16;
+			remoteInfo = "OxyGuard Watch App";
+		};
+		40EF26DA2BFC919200075A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40EF26D52BFC919200075A48 /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5BA1C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
+		40EF26DC2BFC919200075A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40EF26D52BFC919200075A48 /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5196C7F9226F8F8F00F1C2A2;
+			remoteInfo = CareKitTests;
+		};
+		40EF27942BFC921600075A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40EF27072BFC921600075A48 /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5BA1C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
+		40EF27962BFC921600075A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40EF27072BFC921600075A48 /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5196C7F9226F8F8F00F1C2A2;
+			remoteInfo = CareKitTests;
+		};
+		40EF279D2BFC922400075A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40EF27982BFC922400075A48 /* CareKitStore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E784B8F82232EED600736CA5;
+			remoteInfo = CareKitStore;
+		};
+		40EF279F2BFC922400075A48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 40EF27982BFC922400075A48 /* CareKitStore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E784B9012232EED600736CA5;
+			remoteInfo = CareKitStoreTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		404C43E82BF488590016FF16 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				404C43C02BF488570016FF16 /* OxyGuard Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		402A601D2C04337500B49E98 /* EmergencyAlert.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = EmergencyAlert.mp3; sourceTree = "<group>"; };
+		404C43B92BF488570016FF16 /* OxyGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OxyGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		404C43BF2BF488570016FF16 /* OxyGuard Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OxyGuard Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		404C43C42BF488570016FF16 /* OxyGuardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxyGuardApp.swift; sourceTree = "<group>"; };
+		404C43C82BF488590016FF16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		404C43CB2BF488590016FF16 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		404C43D12BF488590016FF16 /* OxyGuard Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OxyGuard Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		404C43D52BF488590016FF16 /* OxyGuard_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxyGuard_Watch_AppTests.swift; sourceTree = "<group>"; };
+		404C43DB2BF488590016FF16 /* OxyGuard Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OxyGuard Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		404C43DF2BF488590016FF16 /* OxyGuard_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxyGuard_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		404C43E12BF488590016FF16 /* OxyGuard_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxyGuard_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		408ECB0B2BF60096005E0419 /* OxyGuard Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OxyGuard Watch App.entitlements"; sourceTree = "<group>"; };
+		408ECB0C2BF600A0005E0419 /* OxyGuard-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "OxyGuard-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		408ECB0F2BF62479005E0419 /* OxyMeterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OxyMeterView.swift; sourceTree = "<group>"; };
+		408ECB112BF65AAB005E0419 /* MeasureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureManager.swift; sourceTree = "<group>"; };
+		408ECB132BF66751005E0419 /* EndView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndView.swift; sourceTree = "<group>"; };
+		408ECB152BF668DB005E0419 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		408ECB172BF6802D005E0419 /* SessionPagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionPagingView.swift; sourceTree = "<group>"; };
+		4091F81F2BF7087C00FB5915 /* MeasuringOxy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MeasuringOxy.json; sourceTree = "<group>"; };
+		4091F8262BF752B100FB5915 /* HeartRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateView.swift; sourceTree = "<group>"; };
+		4091F82C2BF87FD600FB5915 /* EmergencyHeartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyHeartView.swift; sourceTree = "<group>"; };
+		4091F8322BF8F95F00FB5915 /* EmergencyOxyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmergencyOxyView.swift; sourceTree = "<group>"; };
+		4091F8342BF8FA9500FB5915 /* SliderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderButton.swift; sourceTree = "<group>"; };
+		40CBD9792BFC4D1D00F52B8E /* EmergencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyView.swift; sourceTree = "<group>"; };
+		40EF26D52BFC919200075A48 /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = "../../../../../../Downloads/CareKit-main/CareKit/CareKit.xcodeproj"; sourceTree = "<group>"; };
+		40EF26E12BFC921600075A48 /* TestContactListViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestContactListViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF26E22BFC921600075A48 /* TestDetailedContactViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDetailedContactViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF26E32BFC921600075A48 /* TestCustomContactViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCustomContactViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF26E42BFC921600075A48 /* TestSimpleContactViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimpleContactViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF26E62BFC921600075A48 /* TestCustomCalendarViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCustomCalendarViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF26E72BFC921600075A48 /* TestDailyProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDailyProgress.swift; sourceTree = "<group>"; };
+		40EF26E82BFC921600075A48 /* TestWeekCalendarViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWeekCalendarViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF26EA2BFC921600075A48 /* TestCareStoreFetchRequestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCareStoreFetchRequestController.swift; sourceTree = "<group>"; };
+		40EF26EB2BFC921600075A48 /* TestSynchronizedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSynchronizedViewController.swift; sourceTree = "<group>"; };
+		40EF26ED2BFC921600075A48 /* TestWeekCalendarPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestWeekCalendarPageViewController.swift; sourceTree = "<group>"; };
+		40EF26EE2BFC921600075A48 /* TestDailyTasksPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDailyTasksPageViewController.swift; sourceTree = "<group>"; };
+		40EF26EF2BFC921600075A48 /* TestListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestListView.swift; sourceTree = "<group>"; };
+		40EF26F12BFC921600075A48 /* TestCustomChartViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCustomChartViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF26F22BFC921600075A48 /* TestCartesianChartViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCartesianChartViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF26F42BFC921600075A48 /* XCTestCase+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extension.swift"; sourceTree = "<group>"; };
+		40EF26F52BFC921600075A48 /* OCKSchedule+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKSchedule+Extension.swift"; sourceTree = "<group>"; };
+		40EF26F62BFC921600075A48 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		40EF26F72BFC921600075A48 /* TestAnyEventStoreExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAnyEventStoreExtensions.swift; sourceTree = "<group>"; };
+		40EF26F82BFC921600075A48 /* TestContactExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestContactExtension.swift; sourceTree = "<group>"; };
+		40EF26FA2BFC921600075A48 /* TestChecklistViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestChecklistViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF26FB2BFC921600075A48 /* TestCustomTaskViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCustomTaskViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF26FC2BFC921600075A48 /* TestSimpleTaskViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSimpleTaskViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF26FD2BFC921600075A48 /* TestGridTaskViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGridTaskViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF26FE2BFC921600075A48 /* TestInstructionsTaskViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInstructionsTaskViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF26FF2BFC921600075A48 /* TestButtonLogTaskViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestButtonLogTaskViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF27002BFC921600075A48 /* TestAnyEventExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAnyEventExtensions.swift; sourceTree = "<group>"; };
+		40EF27012BFC921600075A48 /* TestMockTaskEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMockTaskEvents.swift; sourceTree = "<group>"; };
+		40EF27022BFC921600075A48 /* TestTaskEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTaskEvents.swift; sourceTree = "<group>"; };
+		40EF27032BFC921600075A48 /* OCKTask+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKTask+Extension.swift"; sourceTree = "<group>"; };
+		40EF27042BFC921600075A48 /* MockStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStore.swift; sourceTree = "<group>"; };
+		40EF27052BFC921600075A48 /* TestScheduleUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScheduleUtility.swift; sourceTree = "<group>"; };
+		40EF27062BFC921600075A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40EF27072BFC921600075A48 /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CareKit.xcodeproj; sourceTree = "<group>"; };
+		40EF270A2BFC921600075A48 /* CareKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CareKit.docc; sourceTree = "<group>"; };
+		40EF270D2BFC921600075A48 /* OCKContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKContactController.swift; sourceTree = "<group>"; };
+		40EF270E2BFC921600075A48 /* OCKInstructionsTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKInstructionsTaskController.swift; sourceTree = "<group>"; };
+		40EF270F2BFC921600075A48 /* OCKSimpleTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKSimpleTaskController.swift; sourceTree = "<group>"; };
+		40EF27102BFC921600075A48 /* OCKCalendarViewSynchronizerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKCalendarViewSynchronizerProtocol.swift; sourceTree = "<group>"; };
+		40EF27112BFC921600075A48 /* OCKStoreNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKStoreNotifications.swift; sourceTree = "<group>"; };
+		40EF27122BFC921600075A48 /* OCKChecklistTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKChecklistTaskController.swift; sourceTree = "<group>"; };
+		40EF27132BFC921600075A48 /* OCKSimpleContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKSimpleContactController.swift; sourceTree = "<group>"; };
+		40EF27142BFC921600075A48 /* OCKSynchronizedStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKSynchronizedStoreManager.swift; sourceTree = "<group>"; };
+		40EF27152BFC921600075A48 /* OCKTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKTaskController.swift; sourceTree = "<group>"; };
+		40EF27162BFC921600075A48 /* OCKCartesianChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKCartesianChartController.swift; sourceTree = "<group>"; };
+		40EF27172BFC921600075A48 /* OCKDetailedContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKDetailedContactController.swift; sourceTree = "<group>"; };
+		40EF27182BFC921600075A48 /* OCKNumericProgressTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKNumericProgressTaskController.swift; sourceTree = "<group>"; };
+		40EF27192BFC921600075A48 /* OCKTaskViewSynchronizerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKTaskViewSynchronizerProtocol.swift; sourceTree = "<group>"; };
+		40EF271A2BFC921600075A48 /* OCKGridTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKGridTaskController.swift; sourceTree = "<group>"; };
+		40EF271B2BFC921600075A48 /* OCKCalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKCalendarController.swift; sourceTree = "<group>"; };
+		40EF271C2BFC921600075A48 /* OCKWeekCalendarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKWeekCalendarController.swift; sourceTree = "<group>"; };
+		40EF271D2BFC921600075A48 /* OCKButtonLogTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKButtonLogTaskController.swift; sourceTree = "<group>"; };
+		40EF271E2BFC921600075A48 /* OCKContactViewSynchronizerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKContactViewSynchronizerProtocol.swift; sourceTree = "<group>"; };
+		40EF271F2BFC921600075A48 /* OCKLabeledValueTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKLabeledValueTaskController.swift; sourceTree = "<group>"; };
+		40EF27202BFC921600075A48 /* OCKChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKChartController.swift; sourceTree = "<group>"; };
+		40EF27212BFC921600075A48 /* OCKChartViewSynchronizerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKChartViewSynchronizerProtocol.swift; sourceTree = "<group>"; };
+		40EF27242BFC921600075A48 /* TemporalTaskProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporalTaskProgress.swift; sourceTree = "<group>"; };
+		40EF27252BFC921600075A48 /* CareStoreFetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareStoreFetchRequest.swift; sourceTree = "<group>"; };
+		40EF27262BFC921600075A48 /* CareStoreFetchedResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareStoreFetchedResults.swift; sourceTree = "<group>"; };
+		40EF27272BFC921600075A48 /* OCKSynchronizationContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKSynchronizationContext.swift; sourceTree = "<group>"; };
+		40EF27282BFC921600075A48 /* CareStoreFetchRequestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareStoreFetchRequestController.swift; sourceTree = "<group>"; };
+		40EF27292BFC921600075A48 /* OCKAnyReadOnlyEventStore+Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKAnyReadOnlyEventStore+Progress.swift"; sourceTree = "<group>"; };
+		40EF272A2BFC921600075A48 /* CareStoreFetchedResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareStoreFetchedResult.swift; sourceTree = "<group>"; };
+		40EF272B2BFC921600075A48 /* TemporalProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporalProgress.swift; sourceTree = "<group>"; };
+		40EF272C2BFC921600075A48 /* CareStoreFetchedResult+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CareStoreFetchedResult+Extension.swift"; sourceTree = "<group>"; };
+		40EF272D2BFC921600075A48 /* OCKLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKLog.swift; sourceTree = "<group>"; };
+		40EF272F2BFC921600075A48 /* OCKAnyEventStore+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKAnyEventStore+Extension.swift"; sourceTree = "<group>"; };
+		40EF27302BFC921600075A48 /* OCKAnyEvent+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKAnyEvent+Extension.swift"; sourceTree = "<group>"; };
+		40EF27312BFC921600075A48 /* OCKAnyStoreProtocol+Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKAnyStoreProtocol+Environment.swift"; sourceTree = "<group>"; };
+		40EF27322BFC921600075A48 /* OCKAnyContact+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKAnyContact+Extension.swift"; sourceTree = "<group>"; };
+		40EF27332BFC921600075A48 /* Calendar+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Extensions.swift"; sourceTree = "<group>"; };
+		40EF27342BFC921600075A48 /* UIImage+Asset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Asset.swift"; sourceTree = "<group>"; };
+		40EF27352BFC921600075A48 /* Number+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Number+Extension.swift"; sourceTree = "<group>"; };
+		40EF27362BFC921600075A48 /* LinearCareTaskProgress+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinearCareTaskProgress+Extension.swift"; sourceTree = "<group>"; };
+		40EF27382BFC921600075A48 /* OCKScheduleUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKScheduleUtility.swift; sourceTree = "<group>"; };
+		40EF273A2BFC921600075A48 /* InstructionsTaskView+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InstructionsTaskView+Init.swift"; sourceTree = "<group>"; };
+		40EF273B2BFC921600075A48 /* SimpleTaskView+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SimpleTaskView+Init.swift"; sourceTree = "<group>"; };
+		40EF273C2BFC921600075A48 /* OCKTaskEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKTaskEvents.swift; sourceTree = "<group>"; };
+		40EF27402BFC921600075A48 /* OCKSimpleContactViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKSimpleContactViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF27412BFC921600075A48 /* OCKDetailedContactViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKDetailedContactViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF27422BFC921600075A48 /* _OCKContactsListViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _OCKContactsListViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF27442BFC921600075A48 /* OCKSimpleContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKSimpleContactViewController.swift; sourceTree = "<group>"; };
+		40EF27452BFC921600075A48 /* OCKContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKContactViewController.swift; sourceTree = "<group>"; };
+		40EF27462BFC921600075A48 /* OCKDetailedContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKDetailedContactViewController.swift; sourceTree = "<group>"; };
+		40EF27472BFC921600075A48 /* OCKContactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKContactsListViewController.swift; sourceTree = "<group>"; };
+		40EF27482BFC921600075A48 /* OCKContactViewResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKContactViewResponder.swift; sourceTree = "<group>"; };
+		40EF274B2BFC921600075A48 /* OCKWeekCalendarViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKWeekCalendarViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF274D2BFC921600075A48 /* OCKCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKCalendarViewController.swift; sourceTree = "<group>"; };
+		40EF274E2BFC921600075A48 /* OCKWeekCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKWeekCalendarViewController.swift; sourceTree = "<group>"; };
+		40EF27502BFC921600075A48 /* OCKWeekCalendarPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKWeekCalendarPageViewController.swift; sourceTree = "<group>"; };
+		40EF27522BFC921600075A48 /* ViewSynchronizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSynchronizing.swift; sourceTree = "<group>"; };
+		40EF27532BFC921600075A48 /* SynchronizedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizedViewController.swift; sourceTree = "<group>"; };
+		40EF27562BFC921600075A48 /* OCKListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKListView.swift; sourceTree = "<group>"; };
+		40EF27572BFC921600075A48 /* OCKHeaderBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKHeaderBodyView.swift; sourceTree = "<group>"; };
+		40EF27592BFC921600075A48 /* OCKDailyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKDailyPageViewController.swift; sourceTree = "<group>"; };
+		40EF275A2BFC921600075A48 /* OCKListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKListViewController.swift; sourceTree = "<group>"; };
+		40EF275B2BFC921600075A48 /* OCKDailyTasksPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKDailyTasksPageViewController.swift; sourceTree = "<group>"; };
+		40EF275E2BFC921600075A48 /* OCKCartesianChartViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKCartesianChartViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF27602BFC921600075A48 /* OCKDataSeriesConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKDataSeriesConfiguration.swift; sourceTree = "<group>"; };
+		40EF27612BFC921600075A48 /* OCKChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKChartViewController.swift; sourceTree = "<group>"; };
+		40EF27622BFC921600075A48 /* OCKCartesianChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKCartesianChartViewController.swift; sourceTree = "<group>"; };
+		40EF27642BFC921600075A48 /* OCKDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKDetailViewController.swift; sourceTree = "<group>"; };
+		40EF27672BFC921600075A48 /* OCKDetailedContactView+Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKDetailedContactView+Updatable.swift"; sourceTree = "<group>"; };
+		40EF27682BFC921600075A48 /* OCKSimpleContactView+Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKSimpleContactView+Updatable.swift"; sourceTree = "<group>"; };
+		40EF276A2BFC921600075A48 /* OCKWeekCalendarView+Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKWeekCalendarView+Updatable.swift"; sourceTree = "<group>"; };
+		40EF276C2BFC921600075A48 /* OCKCartesianChartView+Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKCartesianChartView+Updatable.swift"; sourceTree = "<group>"; };
+		40EF276D2BFC921600075A48 /* Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updatable.swift; sourceTree = "<group>"; };
+		40EF276E2BFC921600075A48 /* OCKHeaderView+Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKHeaderView+Updatable.swift"; sourceTree = "<group>"; };
+		40EF27702BFC921600075A48 /* OCKInstructionsTaskView+Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKInstructionsTaskView+Updatable.swift"; sourceTree = "<group>"; };
+		40EF27712BFC921600075A48 /* OCKChecklistTaskView+Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKChecklistTaskView+Updatable.swift"; sourceTree = "<group>"; };
+		40EF27722BFC921600075A48 /* OCKLogTaskView+Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKLogTaskView+Updatable.swift"; sourceTree = "<group>"; };
+		40EF27732BFC921600075A48 /* OCKGridTaskView+Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKGridTaskView+Updatable.swift"; sourceTree = "<group>"; };
+		40EF27742BFC921600075A48 /* OCKSimpleTaskView+Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKSimpleTaskView+Updatable.swift"; sourceTree = "<group>"; };
+		40EF27762BFC921600075A48 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		40EF27772BFC921600075A48 /* OCKContact+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKContact+Extensions.swift"; sourceTree = "<group>"; };
+		40EF27782BFC921600075A48 /* OCKOutcomeValue+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OCKOutcomeValue+Extension.swift"; sourceTree = "<group>"; };
+		40EF27792BFC921600075A48 /* NSLayoutConstraint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Extensions.swift"; sourceTree = "<group>"; };
+		40EF277B2BFC921600075A48 /* OCKContactUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKContactUtility.swift; sourceTree = "<group>"; };
+		40EF277D2BFC921600075A48 /* NumericProgressTaskView+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumericProgressTaskView+Init.swift"; sourceTree = "<group>"; };
+		40EF277F2BFC921600075A48 /* OCKSurveyTaskViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKSurveyTaskViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF27802BFC921600075A48 /* OCKInstructionsTaskViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKInstructionsTaskViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF27812BFC921600075A48 /* OCKSimpleTaskViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKSimpleTaskViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF27822BFC921600075A48 /* OCKButtonLogTaskViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKButtonLogTaskViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF27832BFC921600075A48 /* OCKGridTaskViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKGridTaskViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF27842BFC921600075A48 /* OCKChecklistTaskViewSynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKChecklistTaskViewSynchronizer.swift; sourceTree = "<group>"; };
+		40EF27862BFC921600075A48 /* OCKSimpleTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKSimpleTaskViewController.swift; sourceTree = "<group>"; };
+		40EF27872BFC921600075A48 /* OCKGridTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKGridTaskViewController.swift; sourceTree = "<group>"; };
+		40EF27882BFC921600075A48 /* OCKButtonLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKButtonLogViewController.swift; sourceTree = "<group>"; };
+		40EF27892BFC921600075A48 /* OCKSurveyTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKSurveyTaskViewController.swift; sourceTree = "<group>"; };
+		40EF278A2BFC921600075A48 /* OCKChecklistTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKChecklistTaskViewController.swift; sourceTree = "<group>"; };
+		40EF278B2BFC921600075A48 /* OCKInstructionsTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKInstructionsTaskViewController.swift; sourceTree = "<group>"; };
+		40EF278C2BFC921600075A48 /* OCKTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCKTaskViewController.swift; sourceTree = "<group>"; };
+		40EF278D2BFC921600075A48 /* LabeledValueTaskView+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LabeledValueTaskView+Init.swift"; sourceTree = "<group>"; };
+		40EF27902BFC921600075A48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/locversion.plist; sourceTree = "<group>"; };
+		40EF27912BFC921600075A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40EF27982BFC922400075A48 /* CareKitStore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKitStore.xcodeproj; path = "../../../../../../Downloads/CareKit-main/CareKitStore/CareKitStore.xcodeproj"; sourceTree = "<group>"; };
+		40EF27A12BFCB47600075A48 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		40EF27A32BFCB49500075A48 /* EmergencyHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyHandler.swift; sourceTree = "<group>"; };
+		40EF27A52BFCB72700075A48 /* MeasurementUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementUtils.swift; sourceTree = "<group>"; };
+		40EF28A22C00D11A00075A48 /* LottieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewModel.swift; sourceTree = "<group>"; };
+		40EF28B42C03226800075A48 /* HeartBeat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = HeartBeat.json; sourceTree = "<group>"; };
+		40F308CB2BFC4695005DD342 /* MeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		404C43BC2BF488570016FF16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40EF28A12C00D0F800075A48 /* SDWebImageLottieCoder in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404C43CE2BF488590016FF16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404C43D82BF488590016FF16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		402A601C2C0423C600B49E98 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				40EF28A22C00D11A00075A48 /* LottieViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		404C43B22BF488570016FF16 = {
+			isa = PBXGroup;
+			children = (
+				404C43C32BF488570016FF16 /* OxyGuard Watch App */,
+				404C43D42BF488590016FF16 /* OxyGuard Watch AppTests */,
+				404C43DE2BF488590016FF16 /* OxyGuard Watch AppUITests */,
+				404C43BA2BF488570016FF16 /* Products */,
+				40EF26CC2BFC727800075A48 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		404C43BA2BF488570016FF16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				404C43B92BF488570016FF16 /* OxyGuard.app */,
+				404C43BF2BF488570016FF16 /* OxyGuard Watch App.app */,
+				404C43D12BF488590016FF16 /* OxyGuard Watch AppTests.xctest */,
+				404C43DB2BF488590016FF16 /* OxyGuard Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		404C43C32BF488570016FF16 /* OxyGuard Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				408ECB0C2BF600A0005E0419 /* OxyGuard-Watch-App-Info.plist */,
+				408ECB0B2BF60096005E0419 /* OxyGuard Watch App.entitlements */,
+				40EF27A72BFCD4A100075A48 /* App */,
+				40F308C92BFC43BF005DD342 /* View */,
+				40F308CA2BFC43EC005DD342 /* Helper */,
+				402A601C2C0423C600B49E98 /* View Model */,
+				404C43C82BF488590016FF16 /* Assets.xcassets */,
+				40EF27A82BFCE07E00075A48 /* Sound */,
+				4091F8212BF7088B00FB5915 /* Animation */,
+				404C43CA2BF488590016FF16 /* Preview Content */,
+			);
+			path = "OxyGuard Watch App";
+			sourceTree = "<group>";
+		};
+		404C43CA2BF488590016FF16 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				404C43CB2BF488590016FF16 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		404C43D42BF488590016FF16 /* OxyGuard Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				404C43D52BF488590016FF16 /* OxyGuard_Watch_AppTests.swift */,
+			);
+			path = "OxyGuard Watch AppTests";
+			sourceTree = "<group>";
+		};
+		404C43DE2BF488590016FF16 /* OxyGuard Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				404C43DF2BF488590016FF16 /* OxyGuard_Watch_AppUITests.swift */,
+				404C43E12BF488590016FF16 /* OxyGuard_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "OxyGuard Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		4091F8212BF7088B00FB5915 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				40EF28B42C03226800075A48 /* HeartBeat.json */,
+				4091F81F2BF7087C00FB5915 /* MeasuringOxy.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		4091F8362BF8FCFB00FB5915 /* Heart Rate */ = {
+			isa = PBXGroup;
+			children = (
+				4091F8262BF752B100FB5915 /* HeartRateView.swift */,
+				4091F82C2BF87FD600FB5915 /* EmergencyHeartView.swift */,
+			);
+			path = "Heart Rate";
+			sourceTree = "<group>";
+		};
+		4091F8372BF8FD1000FB5915 /* Oxygen Saturation */ = {
+			isa = PBXGroup;
+			children = (
+				408ECB0F2BF62479005E0419 /* OxyMeterView.swift */,
+				4091F8322BF8F95F00FB5915 /* EmergencyOxyView.swift */,
+			);
+			path = "Oxygen Saturation";
+			sourceTree = "<group>";
+		};
+		40EF26CC2BFC727800075A48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40EF27982BFC922400075A48 /* CareKitStore.xcodeproj */,
+				40EF26DE2BFC921600075A48 /* CareKit */,
+				40EF26D52BFC919200075A48 /* CareKit.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40EF26D62BFC919200075A48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40EF26DB2BFC919200075A48 /* CareKit.framework */,
+				40EF26DD2BFC919200075A48 /* CareKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40EF26DE2BFC921600075A48 /* CareKit */ = {
+			isa = PBXGroup;
+			children = (
+				40EF26DF2BFC921600075A48 /* CareKitTests */,
+				40EF27072BFC921600075A48 /* CareKit.xcodeproj */,
+				40EF270A2BFC921600075A48 /* CareKit.docc */,
+				40EF270B2BFC921600075A48 /* CareKit */,
+			);
+			name = CareKit;
+			path = "../../../../../../Downloads/CareKit-main/CareKit";
+			sourceTree = "<group>";
+		};
+		40EF26DF2BFC921600075A48 /* CareKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				40EF26E02BFC921600075A48 /* Contact */,
+				40EF26E52BFC921600075A48 /* Calendar */,
+				40EF26E92BFC921600075A48 /* Synchronization */,
+				40EF26EC2BFC921600075A48 /* Higher Order */,
+				40EF26F02BFC921600075A48 /* Chart */,
+				40EF26F32BFC921600075A48 /* Extensions */,
+				40EF26F72BFC921600075A48 /* TestAnyEventStoreExtensions.swift */,
+				40EF26F82BFC921600075A48 /* TestContactExtension.swift */,
+				40EF26F92BFC921600075A48 /* Task */,
+				40EF27042BFC921600075A48 /* MockStore.swift */,
+				40EF27052BFC921600075A48 /* TestScheduleUtility.swift */,
+				40EF27062BFC921600075A48 /* Info.plist */,
+			);
+			path = CareKitTests;
+			sourceTree = "<group>";
+		};
+		40EF26E02BFC921600075A48 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				40EF26E12BFC921600075A48 /* TestContactListViewSynchronizer.swift */,
+				40EF26E22BFC921600075A48 /* TestDetailedContactViewSynchronizer.swift */,
+				40EF26E32BFC921600075A48 /* TestCustomContactViewSynchronizer.swift */,
+				40EF26E42BFC921600075A48 /* TestSimpleContactViewSynchronizer.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		40EF26E52BFC921600075A48 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				40EF26E62BFC921600075A48 /* TestCustomCalendarViewSynchronizer.swift */,
+				40EF26E72BFC921600075A48 /* TestDailyProgress.swift */,
+				40EF26E82BFC921600075A48 /* TestWeekCalendarViewSynchronizer.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		40EF26E92BFC921600075A48 /* Synchronization */ = {
+			isa = PBXGroup;
+			children = (
+				40EF26EA2BFC921600075A48 /* TestCareStoreFetchRequestController.swift */,
+				40EF26EB2BFC921600075A48 /* TestSynchronizedViewController.swift */,
+			);
+			path = Synchronization;
+			sourceTree = "<group>";
+		};
+		40EF26EC2BFC921600075A48 /* Higher Order */ = {
+			isa = PBXGroup;
+			children = (
+				40EF26ED2BFC921600075A48 /* TestWeekCalendarPageViewController.swift */,
+				40EF26EE2BFC921600075A48 /* TestDailyTasksPageViewController.swift */,
+				40EF26EF2BFC921600075A48 /* TestListView.swift */,
+			);
+			path = "Higher Order";
+			sourceTree = "<group>";
+		};
+		40EF26F02BFC921600075A48 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				40EF26F12BFC921600075A48 /* TestCustomChartViewSynchronizer.swift */,
+				40EF26F22BFC921600075A48 /* TestCartesianChartViewSynchronizer.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		40EF26F32BFC921600075A48 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				40EF26F42BFC921600075A48 /* XCTestCase+Extension.swift */,
+				40EF26F52BFC921600075A48 /* OCKSchedule+Extension.swift */,
+				40EF26F62BFC921600075A48 /* Array+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		40EF26F92BFC921600075A48 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				40EF26FA2BFC921600075A48 /* TestChecklistViewSynchronizer.swift */,
+				40EF26FB2BFC921600075A48 /* TestCustomTaskViewSynchronizer.swift */,
+				40EF26FC2BFC921600075A48 /* TestSimpleTaskViewSynchronizer.swift */,
+				40EF26FD2BFC921600075A48 /* TestGridTaskViewSynchronizer.swift */,
+				40EF26FE2BFC921600075A48 /* TestInstructionsTaskViewSynchronizer.swift */,
+				40EF26FF2BFC921600075A48 /* TestButtonLogTaskViewSynchronizer.swift */,
+				40EF27002BFC921600075A48 /* TestAnyEventExtensions.swift */,
+				40EF27012BFC921600075A48 /* TestMockTaskEvents.swift */,
+				40EF27022BFC921600075A48 /* TestTaskEvents.swift */,
+				40EF27032BFC921600075A48 /* OCKTask+Extension.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		40EF27082BFC921600075A48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40EF27952BFC921600075A48 /* CareKit.framework */,
+				40EF27972BFC921600075A48 /* CareKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40EF270B2BFC921600075A48 /* CareKit */ = {
+			isa = PBXGroup;
+			children = (
+				40EF270C2BFC921600075A48 /* Stale */,
+				40EF27222BFC921600075A48 /* Shared */,
+				40EF273D2BFC921600075A48 /* iOS */,
+				40EF27912BFC921600075A48 /* Info.plist */,
+			);
+			path = CareKit;
+			sourceTree = "<group>";
+		};
+		40EF270C2BFC921600075A48 /* Stale */ = {
+			isa = PBXGroup;
+			children = (
+				40EF270D2BFC921600075A48 /* OCKContactController.swift */,
+				40EF270E2BFC921600075A48 /* OCKInstructionsTaskController.swift */,
+				40EF270F2BFC921600075A48 /* OCKSimpleTaskController.swift */,
+				40EF27102BFC921600075A48 /* OCKCalendarViewSynchronizerProtocol.swift */,
+				40EF27112BFC921600075A48 /* OCKStoreNotifications.swift */,
+				40EF27122BFC921600075A48 /* OCKChecklistTaskController.swift */,
+				40EF27132BFC921600075A48 /* OCKSimpleContactController.swift */,
+				40EF27142BFC921600075A48 /* OCKSynchronizedStoreManager.swift */,
+				40EF27152BFC921600075A48 /* OCKTaskController.swift */,
+				40EF27162BFC921600075A48 /* OCKCartesianChartController.swift */,
+				40EF27172BFC921600075A48 /* OCKDetailedContactController.swift */,
+				40EF27182BFC921600075A48 /* OCKNumericProgressTaskController.swift */,
+				40EF27192BFC921600075A48 /* OCKTaskViewSynchronizerProtocol.swift */,
+				40EF271A2BFC921600075A48 /* OCKGridTaskController.swift */,
+				40EF271B2BFC921600075A48 /* OCKCalendarController.swift */,
+				40EF271C2BFC921600075A48 /* OCKWeekCalendarController.swift */,
+				40EF271D2BFC921600075A48 /* OCKButtonLogTaskController.swift */,
+				40EF271E2BFC921600075A48 /* OCKContactViewSynchronizerProtocol.swift */,
+				40EF271F2BFC921600075A48 /* OCKLabeledValueTaskController.swift */,
+				40EF27202BFC921600075A48 /* OCKChartController.swift */,
+				40EF27212BFC921600075A48 /* OCKChartViewSynchronizerProtocol.swift */,
+			);
+			path = Stale;
+			sourceTree = "<group>";
+		};
+		40EF27222BFC921600075A48 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				40EF27232BFC921600075A48 /* Synchronization */,
+				40EF272D2BFC921600075A48 /* OCKLog.swift */,
+				40EF272E2BFC921600075A48 /* Extensions */,
+				40EF27372BFC921600075A48 /* Utilities */,
+				40EF27392BFC921600075A48 /* Task */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		40EF27232BFC921600075A48 /* Synchronization */ = {
+			isa = PBXGroup;
+			children = (
+				40EF27242BFC921600075A48 /* TemporalTaskProgress.swift */,
+				40EF27252BFC921600075A48 /* CareStoreFetchRequest.swift */,
+				40EF27262BFC921600075A48 /* CareStoreFetchedResults.swift */,
+				40EF27272BFC921600075A48 /* OCKSynchronizationContext.swift */,
+				40EF27282BFC921600075A48 /* CareStoreFetchRequestController.swift */,
+				40EF27292BFC921600075A48 /* OCKAnyReadOnlyEventStore+Progress.swift */,
+				40EF272A2BFC921600075A48 /* CareStoreFetchedResult.swift */,
+				40EF272B2BFC921600075A48 /* TemporalProgress.swift */,
+				40EF272C2BFC921600075A48 /* CareStoreFetchedResult+Extension.swift */,
+			);
+			path = Synchronization;
+			sourceTree = "<group>";
+		};
+		40EF272E2BFC921600075A48 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				40EF272F2BFC921600075A48 /* OCKAnyEventStore+Extension.swift */,
+				40EF27302BFC921600075A48 /* OCKAnyEvent+Extension.swift */,
+				40EF27312BFC921600075A48 /* OCKAnyStoreProtocol+Environment.swift */,
+				40EF27322BFC921600075A48 /* OCKAnyContact+Extension.swift */,
+				40EF27332BFC921600075A48 /* Calendar+Extensions.swift */,
+				40EF27342BFC921600075A48 /* UIImage+Asset.swift */,
+				40EF27352BFC921600075A48 /* Number+Extension.swift */,
+				40EF27362BFC921600075A48 /* LinearCareTaskProgress+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		40EF27372BFC921600075A48 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				40EF27382BFC921600075A48 /* OCKScheduleUtility.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		40EF27392BFC921600075A48 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				40EF273A2BFC921600075A48 /* InstructionsTaskView+Init.swift */,
+				40EF273B2BFC921600075A48 /* SimpleTaskView+Init.swift */,
+				40EF273C2BFC921600075A48 /* OCKTaskEvents.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		40EF273D2BFC921600075A48 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				40EF273E2BFC921600075A48 /* Contact */,
+				40EF27492BFC921600075A48 /* Calendar */,
+				40EF27512BFC921600075A48 /* Synchronization */,
+				40EF27542BFC921600075A48 /* Higher Order */,
+				40EF275C2BFC921600075A48 /* Chart */,
+				40EF27632BFC921600075A48 /* Details */,
+				40EF27652BFC921600075A48 /* View Updaters */,
+				40EF27752BFC921600075A48 /* Extensions */,
+				40EF277A2BFC921600075A48 /* Utilities */,
+				40EF277C2BFC921600075A48 /* Task */,
+				40EF278E2BFC921600075A48 /* Localization */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		40EF273E2BFC921600075A48 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				40EF273F2BFC921600075A48 /* Synchronizers */,
+				40EF27432BFC921600075A48 /* View Controllers */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		40EF273F2BFC921600075A48 /* Synchronizers */ = {
+			isa = PBXGroup;
+			children = (
+				40EF27402BFC921600075A48 /* OCKSimpleContactViewSynchronizer.swift */,
+				40EF27412BFC921600075A48 /* OCKDetailedContactViewSynchronizer.swift */,
+				40EF27422BFC921600075A48 /* _OCKContactsListViewSynchronizer.swift */,
+			);
+			path = Synchronizers;
+			sourceTree = "<group>";
+		};
+		40EF27432BFC921600075A48 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				40EF27442BFC921600075A48 /* OCKSimpleContactViewController.swift */,
+				40EF27452BFC921600075A48 /* OCKContactViewController.swift */,
+				40EF27462BFC921600075A48 /* OCKDetailedContactViewController.swift */,
+				40EF27472BFC921600075A48 /* OCKContactsListViewController.swift */,
+				40EF27482BFC921600075A48 /* OCKContactViewResponder.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		40EF27492BFC921600075A48 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				40EF274A2BFC921600075A48 /* Synchronizers */,
+				40EF274C2BFC921600075A48 /* View Controllers */,
+				40EF274F2BFC921600075A48 /* Paging */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		40EF274A2BFC921600075A48 /* Synchronizers */ = {
+			isa = PBXGroup;
+			children = (
+				40EF274B2BFC921600075A48 /* OCKWeekCalendarViewSynchronizer.swift */,
+			);
+			path = Synchronizers;
+			sourceTree = "<group>";
+		};
+		40EF274C2BFC921600075A48 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				40EF274D2BFC921600075A48 /* OCKCalendarViewController.swift */,
+				40EF274E2BFC921600075A48 /* OCKWeekCalendarViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		40EF274F2BFC921600075A48 /* Paging */ = {
+			isa = PBXGroup;
+			children = (
+				40EF27502BFC921600075A48 /* OCKWeekCalendarPageViewController.swift */,
+			);
+			path = Paging;
+			sourceTree = "<group>";
+		};
+		40EF27512BFC921600075A48 /* Synchronization */ = {
+			isa = PBXGroup;
+			children = (
+				40EF27522BFC921600075A48 /* ViewSynchronizing.swift */,
+				40EF27532BFC921600075A48 /* SynchronizedViewController.swift */,
+			);
+			path = Synchronization;
+			sourceTree = "<group>";
+		};
+		40EF27542BFC921600075A48 /* Higher Order */ = {
+			isa = PBXGroup;
+			children = (
+				40EF27552BFC921600075A48 /* View */,
+				40EF27582BFC921600075A48 /* ViewController */,
+			);
+			path = "Higher Order";
+			sourceTree = "<group>";
+		};
+		40EF27552BFC921600075A48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				40EF27562BFC921600075A48 /* OCKListView.swift */,
+				40EF27572BFC921600075A48 /* OCKHeaderBodyView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		40EF27582BFC921600075A48 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				40EF27592BFC921600075A48 /* OCKDailyPageViewController.swift */,
+				40EF275A2BFC921600075A48 /* OCKListViewController.swift */,
+				40EF275B2BFC921600075A48 /* OCKDailyTasksPageViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		40EF275C2BFC921600075A48 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				40EF275D2BFC921600075A48 /* Synchronizers */,
+				40EF275F2BFC921600075A48 /* View Controllers */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		40EF275D2BFC921600075A48 /* Synchronizers */ = {
+			isa = PBXGroup;
+			children = (
+				40EF275E2BFC921600075A48 /* OCKCartesianChartViewSynchronizer.swift */,
+			);
+			path = Synchronizers;
+			sourceTree = "<group>";
+		};
+		40EF275F2BFC921600075A48 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				40EF27602BFC921600075A48 /* OCKDataSeriesConfiguration.swift */,
+				40EF27612BFC921600075A48 /* OCKChartViewController.swift */,
+				40EF27622BFC921600075A48 /* OCKCartesianChartViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		40EF27632BFC921600075A48 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				40EF27642BFC921600075A48 /* OCKDetailViewController.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		40EF27652BFC921600075A48 /* View Updaters */ = {
+			isa = PBXGroup;
+			children = (
+				40EF27662BFC921600075A48 /* Contact */,
+				40EF27692BFC921600075A48 /* Calendar */,
+				40EF276B2BFC921600075A48 /* Chart */,
+				40EF276D2BFC921600075A48 /* Updatable.swift */,
+				40EF276E2BFC921600075A48 /* OCKHeaderView+Updatable.swift */,
+				40EF276F2BFC921600075A48 /* Task */,
+			);
+			path = "View Updaters";
+			sourceTree = "<group>";
+		};
+		40EF27662BFC921600075A48 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				40EF27672BFC921600075A48 /* OCKDetailedContactView+Updatable.swift */,
+				40EF27682BFC921600075A48 /* OCKSimpleContactView+Updatable.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		40EF27692BFC921600075A48 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				40EF276A2BFC921600075A48 /* OCKWeekCalendarView+Updatable.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		40EF276B2BFC921600075A48 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				40EF276C2BFC921600075A48 /* OCKCartesianChartView+Updatable.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		40EF276F2BFC921600075A48 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				40EF27702BFC921600075A48 /* OCKInstructionsTaskView+Updatable.swift */,
+				40EF27712BFC921600075A48 /* OCKChecklistTaskView+Updatable.swift */,
+				40EF27722BFC921600075A48 /* OCKLogTaskView+Updatable.swift */,
+				40EF27732BFC921600075A48 /* OCKGridTaskView+Updatable.swift */,
+				40EF27742BFC921600075A48 /* OCKSimpleTaskView+Updatable.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		40EF27752BFC921600075A48 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				40EF27762BFC921600075A48 /* UIViewController+Extensions.swift */,
+				40EF27772BFC921600075A48 /* OCKContact+Extensions.swift */,
+				40EF27782BFC921600075A48 /* OCKOutcomeValue+Extension.swift */,
+				40EF27792BFC921600075A48 /* NSLayoutConstraint+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		40EF277A2BFC921600075A48 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				40EF277B2BFC921600075A48 /* OCKContactUtility.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		40EF277C2BFC921600075A48 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				40EF277D2BFC921600075A48 /* NumericProgressTaskView+Init.swift */,
+				40EF277E2BFC921600075A48 /* Synchronizers */,
+				40EF27852BFC921600075A48 /* View Controllers */,
+				40EF278D2BFC921600075A48 /* LabeledValueTaskView+Init.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		40EF277E2BFC921600075A48 /* Synchronizers */ = {
+			isa = PBXGroup;
+			children = (
+				40EF277F2BFC921600075A48 /* OCKSurveyTaskViewSynchronizer.swift */,
+				40EF27802BFC921600075A48 /* OCKInstructionsTaskViewSynchronizer.swift */,
+				40EF27812BFC921600075A48 /* OCKSimpleTaskViewSynchronizer.swift */,
+				40EF27822BFC921600075A48 /* OCKButtonLogTaskViewSynchronizer.swift */,
+				40EF27832BFC921600075A48 /* OCKGridTaskViewSynchronizer.swift */,
+				40EF27842BFC921600075A48 /* OCKChecklistTaskViewSynchronizer.swift */,
+			);
+			path = Synchronizers;
+			sourceTree = "<group>";
+		};
+		40EF27852BFC921600075A48 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				40EF27862BFC921600075A48 /* OCKSimpleTaskViewController.swift */,
+				40EF27872BFC921600075A48 /* OCKGridTaskViewController.swift */,
+				40EF27882BFC921600075A48 /* OCKButtonLogViewController.swift */,
+				40EF27892BFC921600075A48 /* OCKSurveyTaskViewController.swift */,
+				40EF278A2BFC921600075A48 /* OCKChecklistTaskViewController.swift */,
+				40EF278B2BFC921600075A48 /* OCKInstructionsTaskViewController.swift */,
+				40EF278C2BFC921600075A48 /* OCKTaskViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		40EF278E2BFC921600075A48 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				40EF278F2BFC921600075A48 /* locversion.plist */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		40EF27992BFC922400075A48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40EF279E2BFC922400075A48 /* CareKitStore.framework */,
+				40EF27A02BFC922400075A48 /* CareKitStoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40EF27A72BFCD4A100075A48 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				404C43C42BF488570016FF16 /* OxyGuardApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		40EF27A82BFCE07E00075A48 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				402A601D2C04337500B49E98 /* EmergencyAlert.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		40F308C92BFC43BF005DD342 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				408ECB152BF668DB005E0419 /* StartView.swift */,
+				408ECB132BF66751005E0419 /* EndView.swift */,
+				408ECB172BF6802D005E0419 /* SessionPagingView.swift */,
+				40F308CB2BFC4695005DD342 /* MeasureView.swift */,
+				40CBD9792BFC4D1D00F52B8E /* EmergencyView.swift */,
+				4091F8372BF8FD1000FB5915 /* Oxygen Saturation */,
+				4091F8362BF8FCFB00FB5915 /* Heart Rate */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		40F308CA2BFC43EC005DD342 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				40EF27A52BFCB72700075A48 /* MeasurementUtils.swift */,
+				40EF27A32BFCB49500075A48 /* EmergencyHandler.swift */,
+				40EF27A12BFCB47600075A48 /* LocationManager.swift */,
+				4091F8342BF8FA9500FB5915 /* SliderButton.swift */,
+				408ECB112BF65AAB005E0419 /* MeasureManager.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		404C43B82BF488570016FF16 /* OxyGuard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 404C43E92BF488590016FF16 /* Build configuration list for PBXNativeTarget "OxyGuard" */;
+			buildPhases = (
+				404C43B72BF488570016FF16 /* Resources */,
+				404C43E82BF488590016FF16 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				404C43C22BF488570016FF16 /* PBXTargetDependency */,
+			);
+			name = OxyGuard;
+			productName = OxyGuard;
+			productReference = 404C43B92BF488570016FF16 /* OxyGuard.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		404C43BE2BF488570016FF16 /* OxyGuard Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 404C43E52BF488590016FF16 /* Build configuration list for PBXNativeTarget "OxyGuard Watch App" */;
+			buildPhases = (
+				404C43BB2BF488570016FF16 /* Sources */,
+				404C43BC2BF488570016FF16 /* Frameworks */,
+				404C43BD2BF488570016FF16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OxyGuard Watch App";
+			packageProductDependencies = (
+				40EF28A02C00D0F800075A48 /* SDWebImageLottieCoder */,
+			);
+			productName = "OxyGuard Watch App";
+			productReference = 404C43BF2BF488570016FF16 /* OxyGuard Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		404C43D02BF488590016FF16 /* OxyGuard Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 404C43EC2BF488590016FF16 /* Build configuration list for PBXNativeTarget "OxyGuard Watch AppTests" */;
+			buildPhases = (
+				404C43CD2BF488590016FF16 /* Sources */,
+				404C43CE2BF488590016FF16 /* Frameworks */,
+				404C43CF2BF488590016FF16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				404C43D32BF488590016FF16 /* PBXTargetDependency */,
+			);
+			name = "OxyGuard Watch AppTests";
+			productName = "OxyGuard Watch AppTests";
+			productReference = 404C43D12BF488590016FF16 /* OxyGuard Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		404C43DA2BF488590016FF16 /* OxyGuard Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 404C43EF2BF488590016FF16 /* Build configuration list for PBXNativeTarget "OxyGuard Watch AppUITests" */;
+			buildPhases = (
+				404C43D72BF488590016FF16 /* Sources */,
+				404C43D82BF488590016FF16 /* Frameworks */,
+				404C43D92BF488590016FF16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				404C43DD2BF488590016FF16 /* PBXTargetDependency */,
+			);
+			name = "OxyGuard Watch AppUITests";
+			productName = "OxyGuard Watch AppUITests";
+			productReference = 404C43DB2BF488590016FF16 /* OxyGuard Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		404C43B32BF488570016FF16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					404C43B82BF488570016FF16 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					404C43BE2BF488570016FF16 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					404C43D02BF488590016FF16 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 404C43BE2BF488570016FF16;
+					};
+					404C43DA2BF488590016FF16 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 404C43BE2BF488570016FF16;
+					};
+				};
+			};
+			buildConfigurationList = 404C43B62BF488570016FF16 /* Build configuration list for PBXProject "OxyGuard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 404C43B22BF488570016FF16;
+			packageReferences = (
+				40EF289F2C00D0F800075A48 /* XCRemoteSwiftPackageReference "SDWebImageLottieCoder" */,
+			);
+			productRefGroup = 404C43BA2BF488570016FF16 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 40EF26D62BFC919200075A48 /* Products */;
+					ProjectRef = 40EF26D52BFC919200075A48 /* CareKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 40EF27082BFC921600075A48 /* Products */;
+					ProjectRef = 40EF27072BFC921600075A48 /* CareKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 40EF27992BFC922400075A48 /* Products */;
+					ProjectRef = 40EF27982BFC922400075A48 /* CareKitStore.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				404C43B82BF488570016FF16 /* OxyGuard */,
+				404C43BE2BF488570016FF16 /* OxyGuard Watch App */,
+				404C43D02BF488590016FF16 /* OxyGuard Watch AppTests */,
+				404C43DA2BF488590016FF16 /* OxyGuard Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		40EF26DB2BFC919200075A48 /* CareKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CareKit.framework;
+			remoteRef = 40EF26DA2BFC919200075A48 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40EF26DD2BFC919200075A48 /* CareKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CareKitTests.xctest;
+			remoteRef = 40EF26DC2BFC919200075A48 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40EF27952BFC921600075A48 /* CareKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CareKit.framework;
+			remoteRef = 40EF27942BFC921600075A48 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40EF27972BFC921600075A48 /* CareKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CareKitTests.xctest;
+			remoteRef = 40EF27962BFC921600075A48 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40EF279E2BFC922400075A48 /* CareKitStore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CareKitStore.framework;
+			remoteRef = 40EF279D2BFC922400075A48 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		40EF27A02BFC922400075A48 /* CareKitStoreTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CareKitStoreTests.xctest;
+			remoteRef = 40EF279F2BFC922400075A48 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		404C43B72BF488570016FF16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404C43BD2BF488570016FF16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4091F8202BF7087C00FB5915 /* MeasuringOxy.json in Resources */,
+				404C43CC2BF488590016FF16 /* Preview Assets.xcassets in Resources */,
+				404C43C92BF488590016FF16 /* Assets.xcassets in Resources */,
+				40EF28B52C03226800075A48 /* HeartBeat.json in Resources */,
+				402A601E2C04337500B49E98 /* EmergencyAlert.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404C43CF2BF488590016FF16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404C43D92BF488590016FF16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		404C43BB2BF488570016FF16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40CBD97A2BFC4D1D00F52B8E /* EmergencyView.swift in Sources */,
+				408ECB142BF66751005E0419 /* EndView.swift in Sources */,
+				408ECB122BF65AAB005E0419 /* MeasureManager.swift in Sources */,
+				4091F82D2BF87FD600FB5915 /* EmergencyHeartView.swift in Sources */,
+				40EF27A42BFCB49500075A48 /* EmergencyHandler.swift in Sources */,
+				40EF27A62BFCB72700075A48 /* MeasurementUtils.swift in Sources */,
+				4091F8332BF8F95F00FB5915 /* EmergencyOxyView.swift in Sources */,
+				40EF27A22BFCB47600075A48 /* LocationManager.swift in Sources */,
+				4091F8272BF752B100FB5915 /* HeartRateView.swift in Sources */,
+				40F308CC2BFC4695005DD342 /* MeasureView.swift in Sources */,
+				408ECB102BF62479005E0419 /* OxyMeterView.swift in Sources */,
+				404C43C52BF488570016FF16 /* OxyGuardApp.swift in Sources */,
+				408ECB162BF668DB005E0419 /* StartView.swift in Sources */,
+				40EF28A32C00D11A00075A48 /* LottieViewModel.swift in Sources */,
+				4091F8352BF8FA9500FB5915 /* SliderButton.swift in Sources */,
+				408ECB182BF6802D005E0419 /* SessionPagingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404C43CD2BF488590016FF16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				404C43D62BF488590016FF16 /* OxyGuard_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		404C43D72BF488590016FF16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				404C43E02BF488590016FF16 /* OxyGuard_Watch_AppUITests.swift in Sources */,
+				404C43E22BF488590016FF16 /* OxyGuard_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		404C43C22BF488570016FF16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 404C43BE2BF488570016FF16 /* OxyGuard Watch App */;
+			targetProxy = 404C43C12BF488570016FF16 /* PBXContainerItemProxy */;
+		};
+		404C43D32BF488590016FF16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 404C43BE2BF488570016FF16 /* OxyGuard Watch App */;
+			targetProxy = 404C43D22BF488590016FF16 /* PBXContainerItemProxy */;
+		};
+		404C43DD2BF488590016FF16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 404C43BE2BF488570016FF16 /* OxyGuard Watch App */;
+			targetProxy = 404C43DC2BF488590016FF16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40EF278F2BFC921600075A48 /* locversion.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40EF27902BFC921600075A48 /* en */,
+			);
+			name = locversion.plist;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		404C43E32BF488590016FF16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		404C43E42BF488590016FF16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		404C43E62BF488590016FF16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "OxyGuard Watch App/OxyGuard Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OxyGuard Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 6Y742356Q3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OxyGuard-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = OxyGuard;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "OxyGuard need access to your health data to measure blood oxygen.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Blood Oxygen tracked by OxyGuard on Apple Watch will be saved to HealthKit.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "OxyGuard need access to your location in case you are in emergency.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.Natasha.OxyGuard.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		404C43E72BF488590016FF16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "OxyGuard Watch App/OxyGuard Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OxyGuard Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 6Y742356Q3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OxyGuard-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = OxyGuard;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "OxyGuard need access to your health data to measure blood oxygen.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Blood Oxygen tracked by OxyGuard on Apple Watch will be saved to HealthKit.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "OxyGuard need access to your location in case you are in emergency.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.Natasha.OxyGuard.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		404C43EA2BF488590016FF16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Y742356Q3;
+				INFOPLIST_KEY_CFBundleDisplayName = OxyGuard;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.Natasha.OxyGuard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		404C43EB2BF488590016FF16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Y742356Q3;
+				INFOPLIST_KEY_CFBundleDisplayName = OxyGuard;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = id.Natasha.OxyGuard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		404C43ED2BF488590016FF16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Y742356Q3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "id.Natasha.OxyGuard-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OxyGuard Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OxyGuard Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		404C43EE2BF488590016FF16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Y742356Q3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "id.Natasha.OxyGuard-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OxyGuard Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OxyGuard Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		404C43F02BF488590016FF16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Y742356Q3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "id.Natasha.OxyGuard-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "OxyGuard Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		404C43F12BF488590016FF16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6Y742356Q3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "id.Natasha.OxyGuard-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "OxyGuard Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		404C43B62BF488570016FF16 /* Build configuration list for PBXProject "OxyGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				404C43E32BF488590016FF16 /* Debug */,
+				404C43E42BF488590016FF16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		404C43E52BF488590016FF16 /* Build configuration list for PBXNativeTarget "OxyGuard Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				404C43E62BF488590016FF16 /* Debug */,
+				404C43E72BF488590016FF16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		404C43E92BF488590016FF16 /* Build configuration list for PBXNativeTarget "OxyGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				404C43EA2BF488590016FF16 /* Debug */,
+				404C43EB2BF488590016FF16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		404C43EC2BF488590016FF16 /* Build configuration list for PBXNativeTarget "OxyGuard Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				404C43ED2BF488590016FF16 /* Debug */,
+				404C43EE2BF488590016FF16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		404C43EF2BF488590016FF16 /* Build configuration list for PBXNativeTarget "OxyGuard Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				404C43F02BF488590016FF16 /* Debug */,
+				404C43F12BF488590016FF16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		40EF289F2C00D0F800075A48 /* XCRemoteSwiftPackageReference "SDWebImageLottieCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageLottieCoder";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		40EF28A02C00D0F800075A48 /* SDWebImageLottieCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40EF289F2C00D0F800075A48 /* XCRemoteSwiftPackageReference "SDWebImageLottieCoder" */;
+			productName = SDWebImageLottieCoder;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 404C43B32BF488570016FF16 /* Project object */;
+}
